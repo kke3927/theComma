@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    
+    <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="./js/item_list.js"></script>
+    <script defer src="./js/h_f.js"></script>
+    <script defer src="./js/index.js"></script>
+
+    <link rel="stylesheet" href="./css/h_f.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="top_banner">
+    <div class="tb_item">세로 방향으로 돌아가는 탑 배너 첫번째 메세지 입니다.</div>
+    <div class="tb_item">세로 방향으로 돌아가는 탑 배너 두번째 메세지 입니다.</div>
+    <div class="tb_item">세로 방향으로 돌아가는 탑 배너 세번째 메세지 입니다.</div>
+    <div class="tb_item">세로 방향으로 돌아가는 탑 배너 네번째 메세지 입니다.</div>
+    <div class="tb_item">세로 방향으로 돌아가는 탑 배너 다섯번째 메세지 입니다.</div>
+</div>
+<div class="layer_popup">
+    <div class="big_img_box">
+        <a href="#" class="img_box"><img src="./img/popup/big_img_01.jpg" alt=""></a>
+        <a href="#" class="img_box"><img src="./img/popup/big_img_02.jpg" alt=""></a>
+        <a href="#" class="img_box"><img src="./img/popup/big_img_03.jpg" alt=""></a>
+        <a href="#" class="img_box"><img src="./img/popup/big_img_04.jpg" alt=""></a>
+        <a href="#" class="img_box"><img src="./img/popup/big_img_05.jpg" alt=""></a>
+        <a href="#" class="img_box"><img src="./img/popup/big_img_06.jpg" alt=""></a>
+    </div>
+    <div class="sm_img_box">
+        <div class="sm_item">세일이벤트</div>
+        <div class="sm_item">카카오스토리</div>
+        <div class="sm_item">신상품 바로가기</div>
+        <div class="sm_item">INSTAGRAM<br>인스타그램<br>팔로우</div>
+        <div class="sm_item">REVIEW<br>구매후기<br>이벤트</div>
+        <div class="sm_item">JOIN<br>회원가입<br>이벤트</div>
+    </div>
+    <div class="close_btn_box">
+        <div class="btn_close_today">오늘 하루 열지 않음</div>
+        <div class="btn_close">닫기</div>
+    </div>
+</div>
+<div id="wrap">
+    <div class="header">
+        <div class="h_top">
+            <div class="logo">
+                <a href="./index.html">logo</a>
+            </div>
+        </div>
+        <ul class="nav">
+            <li class="nav_item">
+                <a href="product.html?cateNo=0">BEST</a>
+            </li>
+            <li class="nav_item">
+                <a href="product.html?cateNo=1">NEW 5%</a>
+            </li>
+            <li class="nav_item">
+                <a href="product.html?cateNo=2">OUTER</a>
+            </li>
+            <li class="nav_item">
+                <a href="product.html?cateNo=3">TOP</a>
+            </li>
+            <li class="nav_item">
+                <a href="product.html?cateNo=4">BOTTOM</a>
+            </li>
+            <li class="nav_item">
+                <a href="product.html?cateNo=5">ACC</a>
+            </li>
+            <li class="nav_item">
+                <a href="product.html?cateNo=6">BAG&SHOES </a>
+            </li>
+        </ul>
+        <div class="pan">
+            <div class="contents_area">
+                <div class="pan_item pan_item1">
+                    <div class="c_pan">0</div>
+                </div>
+                <div class="pan_item pan_item2">
+                    <div class="c_pan">1</div>
+                </div>
+                <div class="pan_item pan_item3">
+                    <div class="c_pan">2</div>
+                </div>
+                <div class="pan_item pan_item4">
+                    <div class="c_pan">3</div>
+                    <div class="c_pan">3</div>
+                </div>
+                <div class="pan_item pan_item5">
+                    <div class="c_pan">4</div>
+                </div>
+                <div class="pan_item pan_item6">
+                    <div class="c_pan">5</div>
+                </div>
+                <div class="pan_item pan_item7">
+                    <div class="c_pan">6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="sec main_banner">
+            <div class="banner banner1"></div>
+            <div class="banner banner2"></div>
+            <div class="banner banner3"></div>
+
+            <div class="btn_slide" id="btn_L"></div>
+            <div class="btn_slide" id="btn_R"></div>
+
+            <div class="indi">
+                <!-- <div class="line line_active"></div>
+                <div class="line"></div>
+                <div class="line"></div> -->
+            </div>
+        </div>
+
+        <div class="sec contents_area toChk" id="w_raking">
+            <div class="sec_title pos_init">WEEKLY RANKING</div>
+            <div class="sec_body">
+                <ul class="item_box">
+                    <li class="item pos_init">
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./img/items/ranking/1.jpg" alt="">
+                                <div class="ranking_no">1</div>
+                            </a>
+                        </div>
+                        <div class="item_info">
+                            <div class="item_info_title">더콤마</div>
+                            <div class="o_price">300,000원</div>
+                            <div class="s_price">200,000원</div>
+                            <div class="item_desc">상품에 대한 설명이 표시됩니다.</div>
+                        </div>
+                    </li>
+                    <li class="item pos_init">
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./img/items/ranking/2.jpg" alt="">
+                                <div class="ranking_no">2</div>
+                            </a>
+                        </div>
+                        <div class="item_info">
+                            <div class="item_info_title">더콤마</div>
+                            <div class="o_price">300,000원</div>
+                            <div class="s_price">200,000원</div>
+                            <div class="item_desc">상품에 대한 설명이 표시됩니다.</div>
+                        </div>
+                    </li>
+                    <li class="item pos_init">
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./img/items/ranking/3.jpg" alt="">
+                                <div class="ranking_no">3</div>
+                            </a>
+                        </div>
+                        <div class="item_info">
+                            <div class="item_info_title">더콤마</div>
+                            <div class="o_price">300,000원</div>
+                            <div class="s_price">200,000원</div>
+                            <div class="item_desc">상품에 대한 설명이 표시됩니다.</div>
+                        </div>
+                    </li>
+                    <li class="item pos_init">
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./img/items/ranking/4.jpg" alt="">
+                                <div class="ranking_no">4</div>
+                            </a>
+                        </div>
+                        <div class="item_info">
+                            <div class="item_info_title">더콤마</div>
+                            <div class="o_price">300,000원</div>
+                            <div class="s_price">200,000원</div>
+                            <div class="item_desc">상품에 대한 설명이 표시됩니다.</div>
+                        </div>
+                    </li>
+                    <li class="item pos_init">
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./img/items/ranking/5.jpg" alt="">
+                                <div class="ranking_no">5</div>
+                            </a>
+                        </div>
+                        <div class="item_info">
+                            <div class="item_info_title">더콤마</div>
+                            <div class="o_price">300,000원</div>
+                            <div class="s_price">200,000원</div>
+                            <div class="item_desc">상품에 대한 설명이 표시됩니다.</div>
+                        </div>
+                    </li>
+                    <li class="item pos_init">
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./img/items/ranking/6.jpg" alt="">
+                                <div class="ranking_no">6</div>
+                            </a>
+                        </div>
+                        <div class="item_info">
+                            <div class="item_info_title">더콤마</div>
+                            <div class="o_price">300,000원</div>
+                            <div class="s_price">200,000원</div>
+                            <div class="item_desc">상품에 대한 설명이 표시됩니다.</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec contents_area toChk" id="best">
+            <div class="sec_title pos_init">BEST</div>
+            <div class="sec_body">
+                <ul class="item_box">
+                    <!-- <li class="item">
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="../img/items/best/1.jpg" alt=""> 
+                            </a>
+                        </div>
+                        <div class="item_info">
+                            <div class="item_info_title">더콤마</div>
+                            <div class="o_price">300,000원</div>
+                            <div class="s_price">200,000원</div>
+                            <div class="item_desc">상품에 대한 설명이 표시됩니다.</div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="sec contents_area toChk" id="new">
+            <div class="sec_title pos_init">NEW 5%</div>
+            <div class="sec_body">
+                <ul class="item_box"> 
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+
+</body>
+</html>
