@@ -70,11 +70,11 @@ function load_item (cate, qty){
                 <li class="item">
                     <div class="item_img">
                         <a href="#">
-                            <img src="./img/theComma/items/${EL_ARR[cate]}/${tmp.src}" alt=""> `
+                            <img src="./img/items/${EL_ARR[cate]}/${tmp.src}" alt=""> `
                             
         // if(cate == 1) {
         if(tmp.covered_src != undefined) {
-            tmp_list+=` <img src="./img/theComma/items/${EL_ARR[cate]}/${tmp.covered_src}" alt="" class="covered_img"> `
+            tmp_list+=` <img src="./img/items/${EL_ARR[cate]}/${tmp.covered_src}" alt="" class="covered_img"> `
         }
         
         tmp_list+=`     </a>
@@ -92,18 +92,18 @@ function load_item (cate, qty){
         // tmp_list 내부에 삼항연산자 안쓸거면 여기서 cover에 담아서 그 변수 쓰기
         let cover = "";
         if(tmp.covered_src != undefined) {
-            cover +=` <img src="../img/theComma/items/${EL_ARR[cate]}/${tmp.covered_src}" alt="" class="covered_img"> `
+            cover +=` <img src="./img/items/${EL_ARR[cate]}/${tmp.covered_src}" alt="" class="covered_img"> `
         }
         
 
         let tmp_list = `
                 <li class="item pos_init">
                     <div class="item_img">
-                        <a href="302.theComma(item).html?cateNo=${cate}&itemNo=${ITEM_LIST[cate][i].item_no}">
-                            <img src="../img/theComma/items/${EL_ARR[cate]}/${tmp.src}" alt=""> 
+                        <a href="item.html?cateNo=${cate}&itemNo=${ITEM_LIST[cate][i].item_no}">
+                            <img src="./img/items/${EL_ARR[cate]}/${tmp.src}" alt=""> 
                             
                         ${/*삼항연산자*/
-                            //tmp.covered_src!=undefined?'<img src="./img/theComma/items/${EL_ARR[cate]}/${tmp.covered_src}" alt="" class="covered_img">':'' 
+                            //tmp.covered_src!=undefined?'<img src="./img/items/${EL_ARR[cate]}/${tmp.covered_src}" alt="" class="covered_img">':'' 
                             
                             cover
                         }
@@ -125,9 +125,9 @@ function load_item (cate, qty){
 
 // url에서 내가 필요한 정보의 값을 얻어오기
 function get_info_from_url(keyword) { // cateNo, itemNo
-    let url = location.href; // 302.theComma(item).html?cateNo=0&itemNo=3
+    let url = location.href; // item.html?cateNo=0&itemNo=3
     
-    url = url.split("?") // [302.theComma(item).html , cateNo=0&itemNo=3]
+    url = url.split("?") // [item.html , cateNo=0&itemNo=3]
     if(url.length > 1) {
 
         url = url[1].split("&") // [cateNo=0  , itemNo=3]
