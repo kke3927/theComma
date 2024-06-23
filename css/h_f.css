@@ -79,7 +79,7 @@ a {
     height: 100%;
     text-indent: -9999px;
     padding: 5px;
-    background: url(../../img/theComma/logo.jpg) no-repeat center / contain;
+    background: url(../img/logo.jpg) no-repeat center / contain;
 }
 
 .nav {
